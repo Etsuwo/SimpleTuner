@@ -1,25 +1,18 @@
 PODS:
-  - AudioKit (4.11.2):
-    - AudioKit/Core (= 4.11.2)
-    - AudioKit/UI (= 4.11.2)
-  - AudioKit/Core (4.11.2)
-  - AudioKit/UI (4.11.2):
-    - AudioKit/Core
-  - CocoaLumberjack (3.7.0):
-    - CocoaLumberjack/Core (= 3.7.0)
-  - CocoaLumberjack/Core (3.7.0)
-  - RxCocoa (6.0.0):
-    - RxRelay (= 6.0.0)
-    - RxSwift (= 6.0.0)
-  - RxRelay (6.0.0):
-    - RxSwift (= 6.0.0)
-  - RxSwift (6.0.0)
-  - SVGKit (2.1.1):
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SVGKit (3.0.0):
     - CocoaLumberjack (~> 3.0)
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
-  - AudioKit (~> 4.0)
   - RxCocoa
   - RxSwift
   - SVGKit
@@ -27,7 +20,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AudioKit
     - CocoaLumberjack
     - RxCocoa
     - RxRelay
@@ -36,14 +28,13 @@ SPEC REPOS:
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
-  AudioKit: 57cc61d708f085763a031e5c3f87adae21dc4b59
-  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
-  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
-  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
-  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
-  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: e3e6a27d8964ccb7332379342669cd29494dacc4
+PODFILE CHECKSUM: 0b3cbc8bd3c2cc90499a02a89755e13187760cf0
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.2
