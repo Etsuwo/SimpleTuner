@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				5A1B335E277E10E700EAB216 /* Screen */,
 				78358D8A24605C1C00B6E4D1 /* StoryBoard */,
 				7822C0F22257027C00361EC5 /* Assets.xcassets */,
+				09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */,
 				7822C0F72257027C00361EC5 /* Info.plist */,
 			);
 			path = guitarTuner;
@@ -575,6 +578,7 @@
 				7822C0F32257027C00361EC5 /* Assets.xcassets in Resources */,
 				7822C0F12257027B00361EC5 /* Main.storyboard in Resources */,
 				7812FB3425BABB7700190BC6 /* ColorCell.xib in Resources */,
+				09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
