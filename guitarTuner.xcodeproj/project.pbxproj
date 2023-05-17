@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
+		09C3C7262A14CE63001DA3E0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -143,6 +144,7 @@
 			files = (
 				5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */,
 				5A3786612780AC57004341D7 /* SoundpipeAudioKit in Frameworks */,
+				09C3C7262A14CE63001DA3E0 /* FirebaseAnalytics in Frameworks */,
 				5AA46C6E2781A868009287BE /* SwiftyUserDefaults in Frameworks */,
 				5A37865E2780AC2F004341D7 /* AudioKitEX in Frameworks */,
 				5ACA3F552780C74900B7CC04 /* STKAudioKit in Frameworks */,
@@ -477,6 +479,7 @@
 				5A3786602780AC57004341D7 /* SoundpipeAudioKit */,
 				5ACA3F542780C74900B7CC04 /* STKAudioKit */,
 				5AA46C6D2781A868009287BE /* SwiftyUserDefaults */,
+				09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */,
 			);
 			productName = guitarTuner;
 			productReference = 7822C0E82257027B00361EC5 /* guitarTuner.app */;
@@ -556,6 +559,7 @@
 				5A37865F2780AC57004341D7 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 				5ACA3F532780C74900B7CC04 /* XCRemoteSwiftPackageReference "STKAudioKit" */,
 				5AA46C6C2781A868009287BE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7822C0E92257027B00361EC5 /* Products */;
 			projectDirPath = "";
@@ -1024,6 +1028,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		5A3786592780ABB4004341D7 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
@@ -1067,6 +1079,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		5A37865A2780ABB4004341D7 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5A3786592780ABB4004341D7 /* XCRemoteSwiftPackageReference "AudioKit" */;
