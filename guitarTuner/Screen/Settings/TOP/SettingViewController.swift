@@ -28,6 +28,11 @@ class SettingViewController: UITableViewController {
         setup()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        FirebaseAnalyticsLogger.shared.logScreenView(screen: .setting)
+    }
+    
     func dataBind() {
         tableView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in

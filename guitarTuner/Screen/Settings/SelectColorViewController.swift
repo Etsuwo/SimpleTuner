@@ -23,6 +23,11 @@ class SelectColorViewController: UIViewController {
         viewModel.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        FirebaseAnalyticsLogger.shared.logScreenView(screen: .selectColor)
+    }
+    
     func dataBind() {
         viewModel.viewState.themeColorEvent
             .subscribe(onNext: { [weak self] color in
@@ -58,5 +63,15 @@ extension SelectColorViewController: UITableViewDataSource {
         cell.mainColorView.backgroundColor = color.main
         cell.subColorView.backgroundColor = color.sub
         return cell
+    }
+}
+
+extension NSObject {
+    class var className: String {
+        NSStringFromClass(self).components(separatedBy: ".").last ?? ""
+    }
+
+    var className: String {
+        type(of: self).className
     }
 }

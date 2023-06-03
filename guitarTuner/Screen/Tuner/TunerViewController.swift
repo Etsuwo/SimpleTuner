@@ -11,6 +11,7 @@ import XLPagerTabStrip
 import RxSwift
 import RxRelay
 import RxCocoa
+import FirebaseAnalytics
 
 class TunerViewController: UIViewController {
 
@@ -49,6 +50,7 @@ class TunerViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         viewModel.startTuner()
+        FirebaseAnalyticsLogger.shared.logScreenView(screen: .tuner)
     }
     
     private lazy var initViewLayout : Void = {
