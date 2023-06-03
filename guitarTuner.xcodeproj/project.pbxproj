@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */; };
+		09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */; };
+		09AC31082A2AF6D700FDC472 /* AnalyticsScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */; };
+		09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */; };
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
-		09C3C7262A14CE63001DA3E0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */; };
+		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
+		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
+		09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -80,7 +87,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsParameter.swift; sourceTree = "<group>"; };
+		09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenType.swift; sourceTree = "<group>"; };
+		09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenView.swift; sourceTree = "<group>"; };
 		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
+		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -144,12 +157,13 @@
 			files = (
 				5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */,
 				5A3786612780AC57004341D7 /* SoundpipeAudioKit in Frameworks */,
-				09C3C7262A14CE63001DA3E0 /* FirebaseAnalytics in Frameworks */,
 				5AA46C6E2781A868009287BE /* SwiftyUserDefaults in Frameworks */,
 				5A37865E2780AC2F004341D7 /* AudioKitEX in Frameworks */,
 				5ACA3F552780C74900B7CC04 /* STKAudioKit in Frameworks */,
 				78802448263E8AA800CB6D32 /* MessageUI.framework in Frameworks */,
+				09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */,
 				2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */,
+				09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +184,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09AC31062A2AF6AF00FDC472 /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */,
+				09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
+		09AC31092A2AF81500FDC472 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */,
+				09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		09C3C7272A15E90F001DA3E0 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31092A2AF81500FDC472 /* Event */,
+				09AC31062A2AF6AF00FDC472 /* Parameter */,
+				09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */,
+				09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		5A1B335E277E10E700EAB216 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +323,7 @@
 		5A1B3369277E129200EAB216 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				09C3C7272A15E90F001DA3E0 /* Analytics */,
 				7830224725A5EF6400D95267 /* ThemeColor.swift */,
 				5AA46C6F2781A8DC009287BE /* DefaultsKey.swift */,
 				5AA46C712781AB9A009287BE /* LocalDataStore.swift */,
@@ -479,7 +523,8 @@
 				5A3786602780AC57004341D7 /* SoundpipeAudioKit */,
 				5ACA3F542780C74900B7CC04 /* STKAudioKit */,
 				5AA46C6D2781A868009287BE /* SwiftyUserDefaults */,
-				09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */,
+				09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */,
 			);
 			productName = guitarTuner;
 			productReference = 7822C0E82257027B00361EC5 /* guitarTuner.app */;
@@ -559,7 +604,7 @@
 				5A37865F2780AC57004341D7 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 				5ACA3F532780C74900B7CC04 /* XCRemoteSwiftPackageReference "STKAudioKit" */,
 				5AA46C6C2781A868009287BE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
-				09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 7822C0E92257027B00361EC5 /* Products */;
 			projectDirPath = "";
@@ -653,6 +698,7 @@
 				7822C0EE2257027B00361EC5 /* TunerViewController.swift in Sources */,
 				5AC15F082786ABAE0007B304 /* VolumeMeter.swift in Sources */,
 				5AA46C8A27820227009287BE /* MFMailComposeViewController+Extension.swift in Sources */,
+				09AC31082A2AF6D700FDC472 /* AnalyticsScreenType.swift in Sources */,
 				5AA46C8827820008009287BE /* SettingTableSection.swift in Sources */,
 				78702629225B591700E32781 /* SoundAnalizer.swift in Sources */,
 				78E9357B25CD3BCD00A75190 /* UnderLineView.swift in Sources */,
@@ -666,20 +712,25 @@
 				7834A6F625F4F1E700BF1B58 /* TempoSettingViewController.swift in Sources */,
 				7830223425A5BCE600D95267 /* UserInfo.swift in Sources */,
 				5AE9F84A27871B6B00F625B9 /* AppDelegate+Global.swift in Sources */,
+				09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */,
 				5AA46C752781B111009287BE /* TunerViewModel.swift in Sources */,
 				783C81CE22C24757004FEB7E /* SettingViewController.swift in Sources */,
 				7822C0EC2257027B00361EC5 /* AppDelegate.swift in Sources */,
 				5AA46C722781AB9A009287BE /* LocalDataStore.swift in Sources */,
+				09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */,
 				5AA46C842781FACB009287BE /* UIView+Extension.swift in Sources */,
 				5AA46C862781FBB9009287BE /* SettingViewModel.swift in Sources */,
 				78E6E74223112C9C005B56CA /* MetronomeController.swift in Sources */,
+				09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */,
 				78E773E6225DFD85006C8C4B /* Note.swift in Sources */,
 				7812FB3925BAC0AB00190BC6 /* ColorCell.swift in Sources */,
 				78E63EF62266C97900D882CA /* Pitch.swift in Sources */,
 				5A3786582780951C004341D7 /* Metronome.swift in Sources */,
 				78DB12E02306A399005F416D /* Mater.swift in Sources */,
+				09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */,
 				5AA46C8C27820622009287BE /* SelectColorViewModel.swift in Sources */,
 				785096AD257224FD00B2D074 /* VolumeMaterViewController.swift in Sources */,
+				09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */,
 				78E4283A2313F2B100B02902 /* MetroCountView.swift in Sources */,
 				5AA46C702781A8DC009287BE /* DefaultsKey.swift in Sources */,
 				7812FB2C25BABA7B00190BC6 /* SelectColorViewController.swift in Sources */,
@@ -1028,7 +1079,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -1079,10 +1130,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		09C3C7252A14CE63001DA3E0 /* FirebaseAnalytics */ = {
+		09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 09C3C7242A14CE63001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 		5A37865A2780ABB4004341D7 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
