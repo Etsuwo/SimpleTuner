@@ -10,9 +10,20 @@ import Foundation
 import FirebaseAnalytics
 
 struct AnalyticsSelectContent: AnalyticsEvent {
-    var parameters: [any AnalyticsParameter]
+    
+    var parameters: [String: Any] {
+        var params: [String: Any] = [contentName.name: contentName.value]
+        contentParameters.forEach { parameter in
+            params[parameter.name] = parameter.value
+        }
+        return params
+    }
     
     var eventName: String {
         AnalyticsEventSelectContent
     }
+    
+    let contentName: AnalyticsContentName
+    
+    let contentParameters: [any AnalyticsParameter]
 }

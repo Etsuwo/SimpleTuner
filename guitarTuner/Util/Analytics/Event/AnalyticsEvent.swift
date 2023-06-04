@@ -10,5 +10,5 @@ import Foundation
 
 protocol AnalyticsEvent {
     var eventName: String { get }
-    var parameters: [any AnalyticsParameter] { get }
+    var parameters: [String: Any] { get }
 }

@@ -10,8 +10,13 @@ import Foundation
 import FirebaseAnalytics
 
 struct AnalyticsScreenView: AnalyticsEvent {
-    var parameters: [any AnalyticsParameter]
+    var parameters: [String: Any] {
+        [screenView.name: screenView.value]
+    }
+    
     var eventName: String {
         AnalyticsEventScreenView
     }
+    
+    let screenView: AnalyticsScreenType
 }

@@ -16,14 +16,10 @@ class FirebaseAnalyticsLogger: AnalyticsLogger {
     private init() {}
     
     func logScreenView(screen: AnalyticsScreenType) {
-        log(event: AnalyticsScreenView(parameters: [screen]))
+        log(event: AnalyticsScreenView(screenView: screen))
     }
     
     func log(event: AnalyticsEvent) {
-        var params: [String: Any] = [:]
-        event.parameters.forEach { parameter in
-            params[parameter.name] = parameter.value
-        }
-        Analytics.logEvent(event.eventName, parameters: params)
+        Analytics.logEvent(event.eventName, parameters: event.parameters)
     }
 }

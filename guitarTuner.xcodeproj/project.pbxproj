@@ -13,6 +13,7 @@
 		09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */; };
 		09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */; };
 		09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */; };
+		09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */; };
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
 		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
 		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
@@ -95,6 +96,7 @@
 		09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenView.swift; sourceTree = "<group>"; };
 		09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSelectContent.swift; sourceTree = "<group>"; };
 		09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsThemeColor.swift; sourceTree = "<group>"; };
+		09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsContnetName.swift; sourceTree = "<group>"; };
 		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
 		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */,
 				09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */,
 				09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */,
+				09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */,
 			);
 			path = Parameter;
 			sourceTree = "<group>";
@@ -731,6 +734,7 @@
 				09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */,
 				78E773E6225DFD85006C8C4B /* Note.swift in Sources */,
 				7812FB3925BAC0AB00190BC6 /* ColorCell.swift in Sources */,
+				09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */,
 				78E63EF62266C97900D882CA /* Pitch.swift in Sources */,
 				5A3786582780951C004341D7 /* Metronome.swift in Sources */,
 				78DB12E02306A399005F416D /* Mater.swift in Sources */,
