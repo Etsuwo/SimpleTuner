@@ -11,6 +11,8 @@
 		09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */; };
 		09AC31082A2AF6D700FDC472 /* AnalyticsScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */; };
 		09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */; };
+		09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */; };
+		09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */; };
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
 		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
 		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
@@ -91,6 +93,8 @@
 		09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsParameter.swift; sourceTree = "<group>"; };
 		09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenType.swift; sourceTree = "<group>"; };
 		09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenView.swift; sourceTree = "<group>"; };
+		09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSelectContent.swift; sourceTree = "<group>"; };
+		09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsThemeColor.swift; sourceTree = "<group>"; };
 		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
 		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 			children = (
 				09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */,
 				09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */,
+				09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */,
 			);
 			path = Parameter;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			children = (
 				09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */,
 				09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */,
+				09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -704,6 +710,7 @@
 				78E9357B25CD3BCD00A75190 /* UnderLineView.swift in Sources */,
 				78E36057230A67750084DFA1 /* CircleLayer.swift in Sources */,
 				5AC15F0A2786B8930007B304 /* Tuner.swift in Sources */,
+				09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */,
 				5AA46C802781F948009287BE /* NumberPadView.swift in Sources */,
 				5AA46C822781FA83009287BE /* UIColor+Extension.swift in Sources */,
 				78299D8126073157001FEB5C /* TabbarCell.swift in Sources */,
@@ -729,6 +736,7 @@
 				78DB12E02306A399005F416D /* Mater.swift in Sources */,
 				09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */,
 				5AA46C8C27820622009287BE /* SelectColorViewModel.swift in Sources */,
+				09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */,
 				785096AD257224FD00B2D074 /* VolumeMaterViewController.swift in Sources */,
 				09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */,
 				78E4283A2313F2B100B02902 /* MetroCountView.swift in Sources */,

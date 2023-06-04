@@ -33,6 +33,7 @@ class SelectColorViewController: UIViewController {
             .subscribe(onNext: { [weak self] color in
                 self?.navigationController?.navigationBar.updateColorAppearance(color: color.tab)
                 self?.tableView.reloadData()
+                FirebaseAnalyticsLogger.shared.log(event: AnalyticsSelectContent(parameters: [AnalyticsThemeColor(themeColor: color)]))
             })
             .disposed(by: disposeBag)
         tableView.rx.itemSelected
