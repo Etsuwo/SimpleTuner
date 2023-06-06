@@ -14,6 +14,7 @@
 		09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */; };
 		09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */; };
 		09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */; };
+		09AC31162A2F761900FDC472 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */; };
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
 		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
 		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
@@ -170,6 +171,7 @@
 				09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */,
 				2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */,
 				09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				09AC31162A2F761900FDC472 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +536,7 @@
 				5AA46C6D2781A868009287BE /* SwiftyUserDefaults */,
 				09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */,
+				09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */,
 			);
 			productName = guitarTuner;
 			productReference = 7822C0E82257027B00361EC5 /* guitarTuner.app */;
@@ -1142,6 +1145,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
