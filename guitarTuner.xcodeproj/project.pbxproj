@@ -15,6 +15,7 @@
 		09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */; };
 		09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */; };
 		09AC31162A2F761900FDC472 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */; };
+		09AC31192A2F76B800FDC472 /* RemoteConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */; };
 		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
 		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
 		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
@@ -98,6 +99,7 @@
 		09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSelectContent.swift; sourceTree = "<group>"; };
 		09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsThemeColor.swift; sourceTree = "<group>"; };
 		09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsContnetName.swift; sourceTree = "<group>"; };
+		09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigProvider.swift; sourceTree = "<group>"; };
 		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
 		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
@@ -211,6 +213,14 @@
 				09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		09AC31172A2F765300FDC472 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */,
+			);
+			path = RemoteConfig;
 			sourceTree = "<group>";
 		};
 		09C3C7272A15E90F001DA3E0 /* Analytics */ = {
@@ -334,6 +344,7 @@
 		5A1B3369277E129200EAB216 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				09AC31172A2F765300FDC472 /* RemoteConfig */,
 				09C3C7272A15E90F001DA3E0 /* Analytics */,
 				7830224725A5EF6400D95267 /* ThemeColor.swift */,
 				5AA46C6F2781A8DC009287BE /* DefaultsKey.swift */,
@@ -730,6 +741,7 @@
 				783C81CE22C24757004FEB7E /* SettingViewController.swift in Sources */,
 				7822C0EC2257027B00361EC5 /* AppDelegate.swift in Sources */,
 				5AA46C722781AB9A009287BE /* LocalDataStore.swift in Sources */,
+				09AC31192A2F76B800FDC472 /* RemoteConfigProvider.swift in Sources */,
 				09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */,
 				5AA46C842781FACB009287BE /* UIView+Extension.swift in Sources */,
 				5AA46C862781FBB9009287BE /* SettingViewModel.swift in Sources */,
@@ -928,9 +940,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = BSVDZ6B7NG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZF824CFGPA;
 				INFOPLIST_FILE = guitarTuner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -941,6 +955,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.324etsushi.SimpleTuner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = SimpleTuner;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = simple_tuner_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -952,9 +967,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = BSVDZ6B7NG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZF824CFGPA;
 				INFOPLIST_FILE = guitarTuner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -965,6 +982,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.324etsushi.SimpleTuner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = SimpleTuner;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = simple_tuner_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
