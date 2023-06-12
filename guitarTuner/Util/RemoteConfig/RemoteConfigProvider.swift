@@ -62,7 +62,7 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
     }
     
     func getConfig<T>(key: T) -> T.valueType where T : ConfigKey {
-        key.getConfig()
+        key.getConfig(remoteConfig: remoteConfig)
     }
 }
 

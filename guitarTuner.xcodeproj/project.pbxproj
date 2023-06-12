@@ -21,6 +21,8 @@
 		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
 		09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */; };
+		09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40F9E2A36E724007E1D78 /* ConfigKey.swift */; };
+		09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA02A36EB1B007E1D78 /* StringConfig.swift */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -103,6 +105,8 @@
 		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
 		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
+		09D40F9E2A36E724007E1D78 /* ConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigKey.swift; sourceTree = "<group>"; };
+		09D40FA02A36EB1B007E1D78 /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */,
+				09D40F9E2A36E724007E1D78 /* ConfigKey.swift */,
+				09D40FA02A36EB1B007E1D78 /* StringConfig.swift */,
 			);
 			path = RemoteConfig;
 			sourceTree = "<group>";
@@ -734,6 +740,7 @@
 				5AA46C7C2781DD65009287BE /* VolumeMeterBarView.swift in Sources */,
 				5AE9F84E27872C3A00F625B9 /* UINavigationBar+Extension.swift in Sources */,
 				7834A6F625F4F1E700BF1B58 /* TempoSettingViewController.swift in Sources */,
+				09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */,
 				7830223425A5BCE600D95267 /* UserInfo.swift in Sources */,
 				5AE9F84A27871B6B00F625B9 /* AppDelegate+Global.swift in Sources */,
 				09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */,
@@ -758,6 +765,7 @@
 				09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */,
 				785096AD257224FD00B2D074 /* VolumeMaterViewController.swift in Sources */,
 				09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */,
+				09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */,
 				78E4283A2313F2B100B02902 /* MetroCountView.swift in Sources */,
 				5AA46C702781A8DC009287BE /* DefaultsKey.swift in Sources */,
 				7812FB2C25BABA7B00190BC6 /* SelectColorViewController.swift in Sources */,
