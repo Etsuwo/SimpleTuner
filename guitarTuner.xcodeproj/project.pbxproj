@@ -23,6 +23,7 @@
 		09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */; };
 		09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40F9E2A36E724007E1D78 /* ConfigKey.swift */; };
 		09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA02A36EB1B007E1D78 /* StringConfig.swift */; };
+		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -169,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */,
+				09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */,
 				5A3786612780AC57004341D7 /* SoundpipeAudioKit in Frameworks */,
 				5AA46C6E2781A868009287BE /* SwiftyUserDefaults in Frameworks */,
 				5A37865E2780AC2F004341D7 /* AudioKitEX in Frameworks */,
@@ -554,6 +556,7 @@
 				09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */,
 				09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */,
 				09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */,
+				09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */,
 			);
 			productName = guitarTuner;
 			productReference = 7822C0E82257027B00361EC5 /* guitarTuner.app */;
@@ -634,6 +637,7 @@
 				5ACA3F532780C74900B7CC04 /* XCRemoteSwiftPackageReference "STKAudioKit" */,
 				5AA46C6C2781A868009287BE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
 				09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = 7822C0E92257027B00361EC5 /* Products */;
 			projectDirPath = "";
@@ -1128,6 +1132,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		5A3786592780ABB4004341D7 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
@@ -1185,6 +1197,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
 		};
 		5A37865A2780ABB4004341D7 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
