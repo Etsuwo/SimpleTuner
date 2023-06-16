@@ -8,16 +8,24 @@
 
 import Foundation
 import FirebaseRemoteConfig
+import AsyncAlgorithms
 
 protocol RemoteConfigProviderProtocol {
+    var updateEventChannel: AsyncChannel<Void> { get }
     func syncConfig() async throws
-    func listenConfigUpdate() async throws -> AsyncStream<Void>
+    func listenConfigUpdate()
     func getConfig<T: ConfigKey>(key: T) -> T.valueType
 }
 
 final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
     
     private let remoteConfig = RemoteConfig.remoteConfig()
+    
+    private let _updateEventChannel = AsyncChannel<Void>()
+    
+    nonisolated var updateEventChannel: AsyncChannel<Void> {
+        _updateEventChannel
+    }
     
     func config() {
         let settings = RemoteConfigSettings()
@@ -26,6 +34,7 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
         #endif
         remoteConfig.configSettings = settings
         remoteConfig.setDefaults(fromPlist: "RemoteConfigDefaults")
+        listenConfigUpdate()
     }
     
     func syncConfig() async throws {
@@ -39,23 +48,23 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
                 } else {
                     continuation.resume(throwing: RemoteConfigProviderError.fetchFaild)
                 }
-            
             }
         }
     }
     
-    func listenConfigUpdate() async throws -> AsyncStream<Void> {
-        AsyncStream { continuation in
-            remoteConfig.addOnConfigUpdateListener { configUpdate, error in
-                guard let _ = configUpdate, error == nil else {
-                    debugPrint("error listening for config update: \(String(describing: error?.localizedDescription))")
-                    return
-                }
-                self.remoteConfig.activate { changed, error in
+    func listenConfigUpdate() {
+        remoteConfig.addOnConfigUpdateListener { configUpdate, error in
+            guard let _ = configUpdate, error == nil else {
+                debugPrint("error listening for config update: \(String(describing: error?.localizedDescription))")
+                return
+            }
+            self.remoteConfig.activate { [weak self] changed, error in
+                guard let self else { return }
+                Task {
                     guard error == nil, changed else {
                         return
                     }
-                    continuation.yield()
+                    await self._updateEventChannel.send(())
                 }
             }
         }

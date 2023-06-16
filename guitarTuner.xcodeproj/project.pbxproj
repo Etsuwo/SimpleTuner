@@ -24,6 +24,8 @@
 		09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40F9E2A36E724007E1D78 /* ConfigKey.swift */; };
 		09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA02A36EB1B007E1D78 /* StringConfig.swift */; };
 		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
+		09D40FA42A36F704007E1D78 /* ForceUpdateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */; };
+		09D40FA62A36F999007E1D78 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA52A36F999007E1D78 /* AppVersion.swift */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -108,6 +110,8 @@
 		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
 		09D40F9E2A36E724007E1D78 /* ConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigKey.swift; sourceTree = "<group>"; };
 		09D40FA02A36EB1B007E1D78 /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
+		09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceUpdateProvider.swift; sourceTree = "<group>"; };
+		09D40FA52A36F999007E1D78 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -242,6 +246,14 @@
 			path = Analytics;
 			sourceTree = "<group>";
 		};
+		09D40FA22A36F641007E1D78 /* ForceUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */,
+			);
+			path = ForceUpdate;
+			sourceTree = "<group>";
+		};
 		5A1B335E277E10E700EAB216 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +364,7 @@
 		5A1B3369277E129200EAB216 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				09D40FA22A36F641007E1D78 /* ForceUpdate */,
 				09AC31172A2F765300FDC472 /* RemoteConfig */,
 				09C3C7272A15E90F001DA3E0 /* Analytics */,
 				7830224725A5EF6400D95267 /* ThemeColor.swift */,
@@ -359,6 +372,7 @@
 				5AA46C712781AB9A009287BE /* LocalDataStore.swift */,
 				78E773E5225DFD85006C8C4B /* Note.swift */,
 				78E63EF52266C97900D882CA /* Pitch.swift */,
+				09D40FA52A36F999007E1D78 /* AppVersion.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -727,6 +741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D40FA62A36F999007E1D78 /* AppVersion.swift in Sources */,
 				782A79D22577E62A00E04949 /* TabBarController.swift in Sources */,
 				7822C0EE2257027B00361EC5 /* TunerViewController.swift in Sources */,
 				5AC15F082786ABAE0007B304 /* VolumeMeter.swift in Sources */,
@@ -746,6 +761,7 @@
 				7834A6F625F4F1E700BF1B58 /* TempoSettingViewController.swift in Sources */,
 				09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */,
 				7830223425A5BCE600D95267 /* UserInfo.swift in Sources */,
+				09D40FA42A36F704007E1D78 /* ForceUpdateProvider.swift in Sources */,
 				5AE9F84A27871B6B00F625B9 /* AppDelegate+Global.swift in Sources */,
 				09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */,
 				5AA46C752781B111009287BE /* TunerViewModel.swift in Sources */,
