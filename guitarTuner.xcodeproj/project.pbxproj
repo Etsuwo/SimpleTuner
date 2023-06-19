@@ -28,6 +28,7 @@
 		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
 		09D40FAB2A3C460F007E1D78 /* PopupWindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */; };
 		09D40FAD2A3C487F007E1D78 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */; };
+		09D40FAF2A3FF89D007E1D78 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -116,6 +117,7 @@
 		09D40FA52A36F999007E1D78 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowHandler.swift; sourceTree = "<group>"; };
 		09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 				7822C0F22257027C00361EC5 /* Assets.xcassets */,
 				09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */,
 				7822C0F72257027C00361EC5 /* Info.plist */,
+				09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */,
 			);
 			path = guitarTuner;
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78299D792607301A001FEB5C /* TabbarCell.xib in Resources */,
+				09D40FAF2A3FF89D007E1D78 /* RemoteConfigDefaults.plist in Resources */,
 				7822C0F62257027C00361EC5 /* LaunchScreen.storyboard in Resources */,
 				7822C0F32257027C00361EC5 /* Assets.xcassets in Resources */,
 				7822C0F12257027B00361EC5 /* Main.storyboard in Resources */,
