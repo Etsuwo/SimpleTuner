@@ -23,9 +23,11 @@
 		09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */; };
 		09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40F9E2A36E724007E1D78 /* ConfigKey.swift */; };
 		09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA02A36EB1B007E1D78 /* StringConfig.swift */; };
-		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
 		09D40FA42A36F704007E1D78 /* ForceUpdateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */; };
 		09D40FA62A36F999007E1D78 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA52A36F999007E1D78 /* AppVersion.swift */; };
+		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
+		09D40FAB2A3C460F007E1D78 /* PopupWindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */; };
+		09D40FAD2A3C487F007E1D78 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -112,6 +114,8 @@
 		09D40FA02A36EB1B007E1D78 /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
 		09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceUpdateProvider.swift; sourceTree = "<group>"; };
 		09D40FA52A36F999007E1D78 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowHandler.swift; sourceTree = "<group>"; };
+		09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -357,6 +361,7 @@
 				5AA46C832781FACB009287BE /* UIView+Extension.swift */,
 				5AA46C8927820227009287BE /* MFMailComposeViewController+Extension.swift */,
 				5AE9F84D27872C3A00F625B9 /* UINavigationBar+Extension.swift */,
+				09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -521,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				78E9357A25CD3BCD00A75190 /* UnderLineView.swift */,
+				09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -766,12 +772,14 @@
 				09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */,
 				5AA46C752781B111009287BE /* TunerViewModel.swift in Sources */,
 				783C81CE22C24757004FEB7E /* SettingViewController.swift in Sources */,
+				09D40FAB2A3C460F007E1D78 /* PopupWindowHandler.swift in Sources */,
 				7822C0EC2257027B00361EC5 /* AppDelegate.swift in Sources */,
 				5AA46C722781AB9A009287BE /* LocalDataStore.swift in Sources */,
 				09AC31192A2F76B800FDC472 /* RemoteConfigProvider.swift in Sources */,
 				09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */,
 				5AA46C842781FACB009287BE /* UIView+Extension.swift in Sources */,
 				5AA46C862781FBB9009287BE /* SettingViewModel.swift in Sources */,
+				09D40FAD2A3C487F007E1D78 /* UIAlertController.swift in Sources */,
 				78E6E74223112C9C005B56CA /* MetronomeController.swift in Sources */,
 				09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */,
 				78E773E6225DFD85006C8C4B /* Note.swift in Sources */,
