@@ -15,6 +15,7 @@ extension UIAlertController {
         let action = UIAlertAction(title: "アプリストアへ", style: .default) { _ in
             UIApplication.shared.open(storeUrl)
         }
+        controller.addAction(action)
         return controller
     }
 }
