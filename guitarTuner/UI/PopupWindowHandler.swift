@@ -17,8 +17,9 @@ final class PopupWindowHandler<T: UIViewController> {
     }()
     
     func show(viewController: T) {
-        window.rootViewController = viewController
+        window.rootViewController = UIViewController()
         window.makeKeyAndVisible()
+        window.rootViewController?.present(viewController, animated: true)
     }
     
     func dismiss() {

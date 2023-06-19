@@ -18,8 +18,14 @@ final class ForceUpdateProvider: ForceUpdateProviderProtocol {
     
     private let remoteConfigProvider: RemoteConfigProviderProtocol
     
-    init(remoteConfigProvider: RemoteConfigProviderProtocol = FirebaseRemoteConfigProvider()) {
+    private let popupWindowHandler: PopupWindowHandler<UIAlertController>
+    
+    init(
+        remoteConfigProvider: RemoteConfigProviderProtocol = FirebaseRemoteConfigProvider(),
+        popupWindowHandler: PopupWindowHandler<UIAlertController> = PopupWindowHandler()
+    ) {
         self.remoteConfigProvider = remoteConfigProvider
+        self.popupWindowHandler = popupWindowHandler
     }
     
     func listenUpdate() async {
@@ -59,9 +65,9 @@ final class ForceUpdateProvider: ForceUpdateProviderProtocol {
     
     private func showForceUpdateWindowIfNeed(forceUpdate: ForceUpdate) async {
         if forceUpdate.requireUpdate {
-            await MainActor.run {
+            await MainActor.run { [weak self] in
                 let alertController = UIAlertController.makeForceUpdateAlert(latestVersion: forceUpdate.latestVersion.versionString, storeUrl: forceUpdate.storeUrl)
-                PopupWindowHandler().show(viewController: alertController)
+                self?.popupWindowHandler.show(viewController: alertController)
             }
         }
     }

@@ -15,7 +15,7 @@ import FirebaseCore
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let forceUpdateProvider = ForceUpdateProvider()
+    private(set) lazy var forceUpdateProvider = ForceUpdateProvider()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupAppNavigationController()
@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        } else {
 //            SoundAnalizer.shared.start()
 //        }
+        checkForceUpdate()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

@@ -12,6 +12,7 @@ import AsyncAlgorithms
 
 protocol RemoteConfigProviderProtocol {
     var updateEventChannel: AsyncChannel<Void> { get }
+    func config()
     func syncConfig() async throws
     func listenConfigUpdate()
     func getConfig<T: ConfigKey>(key: T) -> T.valueType
@@ -25,6 +26,10 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
     
     nonisolated var updateEventChannel: AsyncChannel<Void> {
         _updateEventChannel
+    }
+    
+    init() {
+        config()
     }
     
     func config() {
@@ -44,6 +49,7 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
                     continuation.resume(throwing: RemoteConfigProviderError.fetchFaild)
                 }
                 if status == .successFetchedFromRemote || status == .successUsingPreFetchedData {
+                    debugPrint("sync config udpate")
                     continuation.resume()
                 } else {
                     continuation.resume(throwing: RemoteConfigProviderError.fetchFaild)
@@ -64,6 +70,7 @@ final class FirebaseRemoteConfigProvider: RemoteConfigProviderProtocol {
                     guard error == nil, changed else {
                         return
                     }
+                    debugPrint("listening config udpate")
                     await self._updateEventChannel.send(())
                 }
             }
