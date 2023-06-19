@@ -29,4 +29,16 @@ extension AppDelegate {
             UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
         }
     }
+    
+    func listenForceUpdate() {
+        Task.detached { [weak self] in
+            await self?.forceUpdateProvider.listenUpdate()
+        }
+    }
+    
+    func checkForceUpdate() {
+        Task.detached { [weak self] in
+            await self?.forceUpdateProvider.checkUpdate()
+        }
+    }
 }
