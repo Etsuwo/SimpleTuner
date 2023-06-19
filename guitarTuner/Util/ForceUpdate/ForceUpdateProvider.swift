@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ForceUpdateProviderProtocol {
-    func listenUpdate() async -> any AsyncSequence
-    func checkUpdate() async throws -> ForceUpdate?
+    func listenUpdate() async
+    func checkUpdate() async
 }
 
 final class ForceUpdateProvider: ForceUpdateProviderProtocol {
@@ -21,8 +22,8 @@ final class ForceUpdateProvider: ForceUpdateProviderProtocol {
         self.remoteConfigProvider = remoteConfigProvider
     }
     
-    func listenUpdate() async -> any AsyncSequence {
-        remoteConfigProvider.updateEventChannel
+    func listenUpdate() async {
+        let sequence = remoteConfigProvider.updateEventChannel
             .map { [weak self] _ -> ForceUpdate? in
                 guard let self else {
                     return nil
@@ -30,35 +31,47 @@ final class ForceUpdateProvider: ForceUpdateProviderProtocol {
                 return self.createForceUpdate()
             }
             .compactMap { $0 }
+        
+        for await forceUpdate in sequence {
+            await showForceUpdateWindowIfNeed(forceUpdate: forceUpdate)
+        }
     }
     
-    func checkUpdate() async throws -> ForceUpdate? {
+    func checkUpdate() async {
         do {
             try await remoteConfigProvider.syncConfig()
-            return createForceUpdate()
+            guard let forceUpdate = createForceUpdate() else { return }
+            await showForceUpdateWindowIfNeed(forceUpdate: forceUpdate)
         } catch {
-            throw error
+            debugPrint(error.localizedDescription)
         }
     }
     
     private func createForceUpdate() -> ForceUpdate? {
         guard let requiredVersion = AppVersion(remoteConfigProvider.getConfig(key: ConfigKeys.StringKeys.requiredMinimumVersion)),
               let latestVersion = AppVersion(remoteConfigProvider.getConfig(key: ConfigKeys.StringKeys.latestVersion)),
-              let currentVersion = AppVersion(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String) else {
+              let currentVersion = AppVersion(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String),
+              let storeUrl = URL(string: remoteConfigProvider.getConfig(key: ConfigKeys.StringKeys.storeUrl)) else {
             return nil
         }
-        let storeUrl = remoteConfigProvider.getConfig(key: ConfigKeys.StringKeys.storeUrl)
         return ForceUpdate(latestVersion: latestVersion, requiredVersion: requiredVersion, currentVersion: currentVersion, storeUrl: storeUrl)
     }
     
-    
+    private func showForceUpdateWindowIfNeed(forceUpdate: ForceUpdate) async {
+        if forceUpdate.requireUpdate {
+            await MainActor.run {
+                let alertController = UIAlertController.makeForceUpdateAlert(latestVersion: forceUpdate.latestVersion.versionString, storeUrl: forceUpdate.storeUrl)
+                PopupWindowHandler().show(viewController: alertController)
+            }
+        }
+    }
 }
 
 struct ForceUpdate {
     let latestVersion: AppVersion
     let requiredVersion: AppVersion
     let currentVersion: AppVersion
-    let storeUrl: String
+    let storeUrl: URL
     
     var requireUpdate: Bool {
         requiredVersion > currentVersion
