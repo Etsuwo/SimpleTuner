@@ -36,6 +36,11 @@ class MetronomeController: UIViewController {
         _ = self.initViewLayout
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        FirebaseAnalyticsLogger.shared.logScreenView(screen: .metronome)
+    }
+    
     private lazy var initViewLayout : Void = {
         metroCountView.makeView()
         setupUIs()

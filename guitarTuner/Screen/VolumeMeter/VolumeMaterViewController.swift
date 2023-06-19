@@ -30,6 +30,7 @@ class VolumeMaterViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        FirebaseAnalyticsLogger.shared.logScreenView(screen: .volumeMeter)
         viewModel.startVolumeMeter()
     }
     

@@ -1,40 +1,30 @@
 PODS:
-  - CocoaLumberjack (3.7.4):
-    - CocoaLumberjack/Core (= 3.7.4)
-  - CocoaLumberjack/Core (3.7.4)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
-  - SVGKit (3.0.0):
-    - CocoaLumberjack (~> 3.0)
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - RxCocoa
   - RxSwift
-  - SVGKit
   - XLPagerTabStrip
 
 SPEC REPOS:
   trunk:
-    - CocoaLumberjack
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SVGKit
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
-  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 0b3cbc8bd3c2cc90499a02a89755e13187760cf0
+PODFILE CHECKSUM: 53d79d7294426ae1c3ce7f3f0276f4a5279ef44a
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.12.1
