@@ -9,14 +9,19 @@
 import UIKit
 import RxSwift
 import AudioKit
+import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private(set) lazy var forceUpdateProvider = ForceUpdateProvider()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupAppNavigationController()
+        FirebaseApp.configure()
+        listenForceUpdate()
+        checkForceUpdate()
         return true
     }
 
@@ -42,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        } else {
 //            SoundAnalizer.shared.start()
 //        }
+        checkForceUpdate()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

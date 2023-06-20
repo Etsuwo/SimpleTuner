@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */; };
+		09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */; };
+		09AC31082A2AF6D700FDC472 /* AnalyticsScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */; };
+		09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */; };
+		09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */; };
+		09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */; };
+		09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */; };
+		09AC31162A2F761900FDC472 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */; };
+		09AC31192A2F76B800FDC472 /* RemoteConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */; };
+		09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */; };
+		09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */; };
+		09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */; };
+		09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */; };
+		09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40F9E2A36E724007E1D78 /* ConfigKey.swift */; };
+		09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA02A36EB1B007E1D78 /* StringConfig.swift */; };
+		09D40FA42A36F704007E1D78 /* ForceUpdateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */; };
+		09D40FA62A36F999007E1D78 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FA52A36F999007E1D78 /* AppVersion.swift */; };
+		09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */; };
+		09D40FAB2A3C460F007E1D78 /* PopupWindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */; };
+		09D40FAD2A3C487F007E1D78 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */; };
+		09D40FAF2A3FF89D007E1D78 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */; };
 		2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */; };
 		5A3786582780951C004341D7 /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3786572780951C004341D7 /* Metronome.swift */; };
 		5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A37865A2780ABB4004341D7 /* AudioKit */; };
@@ -78,6 +100,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsParameter.swift; sourceTree = "<group>"; };
+		09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenType.swift; sourceTree = "<group>"; };
+		09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsScreenView.swift; sourceTree = "<group>"; };
+		09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsSelectContent.swift; sourceTree = "<group>"; };
+		09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsThemeColor.swift; sourceTree = "<group>"; };
+		09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsContnetName.swift; sourceTree = "<group>"; };
+		09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigProvider.swift; sourceTree = "<group>"; };
+		09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLogger.swift; sourceTree = "<group>"; };
+		09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLogger.swift; sourceTree = "<group>"; };
+		09D40F9E2A36E724007E1D78 /* ConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigKey.swift; sourceTree = "<group>"; };
+		09D40FA02A36EB1B007E1D78 /* StringConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConfig.swift; sourceTree = "<group>"; };
+		09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceUpdateProvider.swift; sourceTree = "<group>"; };
+		09D40FA52A36F999007E1D78 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
+		09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowHandler.swift; sourceTree = "<group>"; };
+		09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		1E8DEAC7CC3ABC449088B71D /* Pods_guitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		467535DACE0ADF3C5230F824 /* Pods-guitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guitarTuner.release.xcconfig"; path = "Pods/Target Support Files/Pods-guitarTuner/Pods-guitarTuner.release.xcconfig"; sourceTree = "<group>"; };
 		5A3786572780951C004341D7 /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -140,12 +180,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A37865B2780ABB4004341D7 /* AudioKit in Frameworks */,
+				09D40FA92A37FAB0007E1D78 /* AsyncAlgorithms in Frameworks */,
 				5A3786612780AC57004341D7 /* SoundpipeAudioKit in Frameworks */,
 				5AA46C6E2781A868009287BE /* SwiftyUserDefaults in Frameworks */,
 				5A37865E2780AC2F004341D7 /* AudioKitEX in Frameworks */,
 				5ACA3F552780C74900B7CC04 /* STKAudioKit in Frameworks */,
 				78802448263E8AA800CB6D32 /* MessageUI.framework in Frameworks */,
+				09C3C7312A15EE0C001DA3E0 /* FirebaseCrashlytics in Frameworks */,
 				2A885E6BBB2DDAD8D3CFA49F /* Pods_guitarTuner.framework in Frameworks */,
+				09C3C72F2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				09AC31162A2F761900FDC472 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +210,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09AC31062A2AF6AF00FDC472 /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31042A2AF68F00FDC472 /* AnalyticsParameter.swift */,
+				09AC31072A2AF6D700FDC472 /* AnalyticsScreenType.swift */,
+				09AC310E2A2B1E0000FDC472 /* AnalyticsThemeColor.swift */,
+				09AC31102A2CC74F00FDC472 /* AnalyticsContnetName.swift */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
+		09AC31092A2AF81500FDC472 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31022A2AF66600FDC472 /* AnalyticsEvent.swift */,
+				09AC310A2A2AF83E00FDC472 /* AnalyticsScreenView.swift */,
+				09AC310C2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		09AC31172A2F765300FDC472 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31182A2F76B800FDC472 /* RemoteConfigProvider.swift */,
+				09D40F9E2A36E724007E1D78 /* ConfigKey.swift */,
+				09D40FA02A36EB1B007E1D78 /* StringConfig.swift */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		09C3C7272A15E90F001DA3E0 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				09AC31092A2AF81500FDC472 /* Event */,
+				09AC31062A2AF6AF00FDC472 /* Parameter */,
+				09C3C7282A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift */,
+				09C3C72A2A15E950001DA3E0 /* AnalyticsLogger.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		09D40FA22A36F641007E1D78 /* ForceUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				09D40FA32A36F704007E1D78 /* ForceUpdateProvider.swift */,
+			);
+			path = ForceUpdate;
+			sourceTree = "<group>";
+		};
 		5A1B335E277E10E700EAB216 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +363,7 @@
 				5AA46C832781FACB009287BE /* UIView+Extension.swift */,
 				5AA46C8927820227009287BE /* MFMailComposeViewController+Extension.swift */,
 				5AE9F84D27872C3A00F625B9 /* UINavigationBar+Extension.swift */,
+				09D40FAC2A3C487F007E1D78 /* UIAlertController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,11 +371,15 @@
 		5A1B3369277E129200EAB216 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				09D40FA22A36F641007E1D78 /* ForceUpdate */,
+				09AC31172A2F765300FDC472 /* RemoteConfig */,
+				09C3C7272A15E90F001DA3E0 /* Analytics */,
 				7830224725A5EF6400D95267 /* ThemeColor.swift */,
 				5AA46C6F2781A8DC009287BE /* DefaultsKey.swift */,
 				5AA46C712781AB9A009287BE /* LocalDataStore.swift */,
 				78E773E5225DFD85006C8C4B /* Note.swift */,
 				78E63EF52266C97900D882CA /* Pitch.swift */,
+				09D40FA52A36F999007E1D78 /* AppVersion.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -381,7 +480,9 @@
 				5A1B335E277E10E700EAB216 /* Screen */,
 				78358D8A24605C1C00B6E4D1 /* StoryBoard */,
 				7822C0F22257027C00361EC5 /* Assets.xcassets */,
+				09C3C7222A14CB8C001DA3E0 /* GoogleService-Info.plist */,
 				7822C0F72257027C00361EC5 /* Info.plist */,
+				09D40FAE2A3FF89D007E1D78 /* RemoteConfigDefaults.plist */,
 			);
 			path = guitarTuner;
 			sourceTree = "<group>";
@@ -428,6 +529,7 @@
 			isa = PBXGroup;
 			children = (
 				78E9357A25CD3BCD00A75190 /* UnderLineView.swift */,
+				09D40FAA2A3C460F007E1D78 /* PopupWindowHandler.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -474,6 +576,10 @@
 				5A3786602780AC57004341D7 /* SoundpipeAudioKit */,
 				5ACA3F542780C74900B7CC04 /* STKAudioKit */,
 				5AA46C6D2781A868009287BE /* SwiftyUserDefaults */,
+				09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */,
+				09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */,
+				09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */,
 			);
 			productName = guitarTuner;
 			productReference = 7822C0E82257027B00361EC5 /* guitarTuner.app */;
@@ -553,6 +659,8 @@
 				5A37865F2780AC57004341D7 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 				5ACA3F532780C74900B7CC04 /* XCRemoteSwiftPackageReference "STKAudioKit" */,
 				5AA46C6C2781A868009287BE /* XCRemoteSwiftPackageReference "SwiftyUserDefaults" */,
+				09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
 			);
 			productRefGroup = 7822C0E92257027B00361EC5 /* Products */;
 			projectDirPath = "";
@@ -571,10 +679,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78299D792607301A001FEB5C /* TabbarCell.xib in Resources */,
+				09D40FAF2A3FF89D007E1D78 /* RemoteConfigDefaults.plist in Resources */,
 				7822C0F62257027C00361EC5 /* LaunchScreen.storyboard in Resources */,
 				7822C0F32257027C00361EC5 /* Assets.xcassets in Resources */,
 				7822C0F12257027B00361EC5 /* Main.storyboard in Resources */,
 				7812FB3425BABB7700190BC6 /* ColorCell.xib in Resources */,
+				09C3C7232A14CB8C001DA3E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,37 +751,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D40FA62A36F999007E1D78 /* AppVersion.swift in Sources */,
 				782A79D22577E62A00E04949 /* TabBarController.swift in Sources */,
 				7822C0EE2257027B00361EC5 /* TunerViewController.swift in Sources */,
 				5AC15F082786ABAE0007B304 /* VolumeMeter.swift in Sources */,
 				5AA46C8A27820227009287BE /* MFMailComposeViewController+Extension.swift in Sources */,
+				09AC31082A2AF6D700FDC472 /* AnalyticsScreenType.swift in Sources */,
 				5AA46C8827820008009287BE /* SettingTableSection.swift in Sources */,
 				78702629225B591700E32781 /* SoundAnalizer.swift in Sources */,
 				78E9357B25CD3BCD00A75190 /* UnderLineView.swift in Sources */,
 				78E36057230A67750084DFA1 /* CircleLayer.swift in Sources */,
 				5AC15F0A2786B8930007B304 /* Tuner.swift in Sources */,
+				09AC310D2A2B1D0C00FDC472 /* AnalyticsSelectContent.swift in Sources */,
 				5AA46C802781F948009287BE /* NumberPadView.swift in Sources */,
 				5AA46C822781FA83009287BE /* UIColor+Extension.swift in Sources */,
 				78299D8126073157001FEB5C /* TabbarCell.swift in Sources */,
 				5AA46C7C2781DD65009287BE /* VolumeMeterBarView.swift in Sources */,
 				5AE9F84E27872C3A00F625B9 /* UINavigationBar+Extension.swift in Sources */,
 				7834A6F625F4F1E700BF1B58 /* TempoSettingViewController.swift in Sources */,
+				09D40FA12A36EB1B007E1D78 /* StringConfig.swift in Sources */,
 				7830223425A5BCE600D95267 /* UserInfo.swift in Sources */,
+				09D40FA42A36F704007E1D78 /* ForceUpdateProvider.swift in Sources */,
 				5AE9F84A27871B6B00F625B9 /* AppDelegate+Global.swift in Sources */,
+				09AC31032A2AF66600FDC472 /* AnalyticsEvent.swift in Sources */,
 				5AA46C752781B111009287BE /* TunerViewModel.swift in Sources */,
 				783C81CE22C24757004FEB7E /* SettingViewController.swift in Sources */,
+				09D40FAB2A3C460F007E1D78 /* PopupWindowHandler.swift in Sources */,
 				7822C0EC2257027B00361EC5 /* AppDelegate.swift in Sources */,
 				5AA46C722781AB9A009287BE /* LocalDataStore.swift in Sources */,
+				09AC31192A2F76B800FDC472 /* RemoteConfigProvider.swift in Sources */,
+				09C3C72B2A15E950001DA3E0 /* AnalyticsLogger.swift in Sources */,
 				5AA46C842781FACB009287BE /* UIView+Extension.swift in Sources */,
 				5AA46C862781FBB9009287BE /* SettingViewModel.swift in Sources */,
+				09D40FAD2A3C487F007E1D78 /* UIAlertController.swift in Sources */,
 				78E6E74223112C9C005B56CA /* MetronomeController.swift in Sources */,
+				09AC31052A2AF68F00FDC472 /* AnalyticsParameter.swift in Sources */,
 				78E773E6225DFD85006C8C4B /* Note.swift in Sources */,
 				7812FB3925BAC0AB00190BC6 /* ColorCell.swift in Sources */,
+				09AC31112A2CC74F00FDC472 /* AnalyticsContnetName.swift in Sources */,
 				78E63EF62266C97900D882CA /* Pitch.swift in Sources */,
 				5A3786582780951C004341D7 /* Metronome.swift in Sources */,
 				78DB12E02306A399005F416D /* Mater.swift in Sources */,
+				09AC310B2A2AF83E00FDC472 /* AnalyticsScreenView.swift in Sources */,
 				5AA46C8C27820622009287BE /* SelectColorViewModel.swift in Sources */,
+				09AC310F2A2B1E0000FDC472 /* AnalyticsThemeColor.swift in Sources */,
 				785096AD257224FD00B2D074 /* VolumeMaterViewController.swift in Sources */,
+				09C3C7292A15E935001DA3E0 /* FirebaseAnalyticsLogger.swift in Sources */,
+				09D40F9F2A36E724007E1D78 /* ConfigKey.swift in Sources */,
 				78E4283A2313F2B100B02902 /* MetroCountView.swift in Sources */,
 				5AA46C702781A8DC009287BE /* DefaultsKey.swift in Sources */,
 				7812FB2C25BABA7B00190BC6 /* SelectColorViewController.swift in Sources */,
@@ -854,19 +980,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = BSVDZ6B7NG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZF824CFGPA;
 				INFOPLIST_FILE = guitarTuner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.324etsushi.SimpleTuner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = SimpleTuner;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = simple_tuner_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -878,19 +1007,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = BSVDZ6B7NG;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZF824CFGPA;
 				INFOPLIST_FILE = guitarTuner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.324etsushi.SimpleTuner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = SimpleTuner;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = simple_tuner_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1020,6 +1152,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		5A3786592780ABB4004341D7 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
@@ -1063,6 +1211,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		09AC31152A2F761900FDC472 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		09C3C72E2A15EE0C001DA3E0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		09C3C7302A15EE0C001DA3E0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09C3C72D2A15EE0C001DA3E0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		09D40FA82A37FAB0007E1D78 /* AsyncAlgorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09D40FA72A37FAB0007E1D78 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */;
+			productName = AsyncAlgorithms;
+		};
 		5A37865A2780ABB4004341D7 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5A3786592780ABB4004341D7 /* XCRemoteSwiftPackageReference "AudioKit" */;
