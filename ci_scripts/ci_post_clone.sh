@@ -16,3 +16,6 @@ bundle install
  
 echo ">>> INSTALL PODS"
 bundle exec pod install
+
+echo ">>> RESTORE ENVIROMENT FILE"
+echo $GOOGLE_SERVICE_INFO | base64 --decode > $CI_WORKSPACE/guitarTuner/GoogleService-info.plist
