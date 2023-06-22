@@ -11,15 +11,16 @@ import RxSwift
 
 final class Tuner: TunerDelegate {
     
-    let analyzer = SoundAnalizer()
+    let analizer: SoundAnalizer
     var tunerPublisher = PublishSubject<(Pitch, Double, Double, Double)>()
     
     var baseFrequencyRange: Range<Double> {
         440 ..< 443
     }
     
-    init() {
-        analyzer.tunerDelegate = self
+    init(analizer: SoundAnalizer = SoundAnalizer.shared) {
+        self.analizer = analizer
+        self.analizer.tunerDelegate = self
     }
     
     func didTrackFrequency(frequency: Double, amplitude: Double) {
