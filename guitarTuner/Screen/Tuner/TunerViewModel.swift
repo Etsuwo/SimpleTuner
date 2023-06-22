@@ -64,11 +64,11 @@ final class TunerViewModel {
     }
     
     func startTuner() {
-        tuner.analyzer.start()
+        tuner.analizer.start()
     }
     
     func stopTuner() {
-        tuner.analyzer.stop()
+        tuner.analizer.stop()
     }
     
     func onTapPlusButton() {

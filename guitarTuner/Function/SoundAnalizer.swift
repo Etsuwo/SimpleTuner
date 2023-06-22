@@ -25,6 +25,8 @@ protocol VolumeMeterDelegate {
  
 class SoundAnalizer {
     
+    static let shared = SoundAnalizer()
+    
     private let engine = AudioEngine()
     private let mic: AudioEngine.InputNode
     private let silence: Fader
@@ -35,7 +37,7 @@ class SoundAnalizer {
     var volumeMeterDelagate: VolumeMeterDelegate?
     var tunerDelegate: TunerDelegate?
     
-    init() {
+    private init() {
         guard let input = engine.input else {
             fatalError("faield to start AudioKit")
         }

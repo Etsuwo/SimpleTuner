@@ -11,11 +11,12 @@ import RxSwift
 
 final class VolumeMeter: VolumeMeterDelegate {
     
-    let analyzer = SoundAnalizer()
+    let analyzer: SoundAnalizer
     var volumeMeterPublisher = PublishSubject<Double>()
     
-    init() {
-        analyzer.volumeMeterDelagate = self
+    init(analyzer: SoundAnalizer = SoundAnalizer.shared) {
+        self.analyzer = analyzer
+        self.analyzer.volumeMeterDelagate = self
     }
     
     func didTrackAmplitude(amplitude: Double) {
